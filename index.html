@@ -13,30 +13,39 @@
                 <h1>🤖 AI Agent</h1>
                 <button id="resetBtn" class="reset-btn">Reset Chat</button>
             </div>
-            
+
+            <section class="joke-card" aria-labelledby="jokeHeading">
+                <div>
+                    <span class="eyebrow">External API demo</span>
+                    <h2 id="jokeHeading">Need a quick laugh?</h2>
+                    <p id="jokeText" class="joke-text">Click the button to fetch a random joke.</p>
+                </div>
+                <button id="jokeBtn" class="joke-btn" type="button">🎲 Get a joke</button>
+            </section>
+
             <div class="chat-box" id="chatBox">
                 <div class="message agent-message">
                     <p>Hello! I'm your AI Agent. How can I help you today?</p>
                 </div>
             </div>
-            
+
             <div class="input-area">
                 <div class="input-wrapper">
-                    <input 
-                        type="text" 
-                        id="userInput" 
+                    <input
+                        type="text"
+                        id="userInput"
                         placeholder="Type your message here..."
                         autocomplete="off"
                     >
-                    <button id="sendBtn" class="send-btn">Send</button>
+                    <button id="sendBtn" class="send-btn" type="button">Send</button>
                 </div>
-                <div id="loadingIndicator" class="loading hidden">
+                <div id="loadingIndicator" class="loading hidden" aria-label="Loading">
                     <span></span><span></span><span></span>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
